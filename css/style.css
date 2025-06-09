@@ -1,0 +1,502 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'gilroy-bold', sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1445px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* --------- Стили для header --------- */
+
+.header {
+  background-color: white;
+  text-align: center;
+}
+
+/* --------- Стили для click --------- */
+
+#clickButton {
+  position: absolute;
+  padding: 20px;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: #aaa9a98b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#clickButton:hover {
+  background-color: #7a7a7a;
+}
+
+.click {
+  position: absolute;
+  font-size: 16px;
+  margin-top: 30px;
+  left: 20px;
+  top: 60px;
+}
+
+#clickCount {
+  font-weight: bold;
+}
+
+/* --------- Стили для header-menu --------- */
+
+.btn {
+  position: relative;
+}
+
+.burger__btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+
+.burger__btn:hover {
+  background-color: rgba(108, 108, 108, 0.299);
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav.active {
+  display: block;
+}
+
+.mainmenu__list {
+  list-style: none;
+  padding: 0;
+  margin: 33px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 156px; 
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black; 
+  font-size: 16px; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu__link:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* --------- Стили для vectora ------------ */
+
+.vector {
+  margin-top: 31px; 
+}
+
+/* --------- Стили для photo-menu --------- */
+
+.photo-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 104px; 
+}
+
+.header__photo {
+  text-decoration: none;
+  color: black;
+  text-align: center; 
+}
+
+.photo__title {
+  font-size: 48px; 
+  text-align: left;
+  width: 100%;
+  margin-top: 40px; 
+}
+
+.photo__subtitle {
+  text-align: center; 
+}
+
+.photo__image {
+  max-width: 100%; 
+  height: auto; 
+}
+
+/* --------- Стили для about-me --------- */
+
+.about-me {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 120px; 
+  padding-bottom: 107px; 
+}
+
+.about-me__title {
+  font-size: 34px; 
+  font-weight: bold;
+}
+
+/* --------- Стили для секции skills --------- */
+
+.skills {
+  text-align: center;
+  padding-top: 91px; 
+  padding-bottom: 110px; 
+}
+
+.me__skills {
+  font-size: 34px; 
+  margin-bottom: 69px; 
+  font-weight: bold;
+}
+
+.intro__skills {
+  margin-bottom: 83px; 
+}
+
+.program {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 20px 24px; 
+}
+
+.work__title {
+  margin-top: 24px; 
+  margin-bottom: 91px; 
+}
+
+.work__img {
+  display: block; 
+  max-width: 100%; 
+  height: auto; 
+}
+
+.work__appraisal {
+  display: block;
+  max-width: 100%; 
+  height: auto; 
+  padding-top: 40px; 
+}
+
+/* --------- Стили для portfolio --------- */
+
+.portfolio {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 113px; 
+  padding-bottom: 96px; 
+}
+
+.me__portfolio {
+  margin-bottom: 47px; 
+  font-weight: bold;
+}
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 166px; 
+}
+
+.picture__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.picture__title {
+  padding: 45px; 
+  font-size: 18px; 
+  text-align: center;
+  margin-bottom: 99px; 
+}
+
+/* --------- Стили для contacts --------- */
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 81px; 
+}
+
+.contacts__title {
+  cursor: pointer;
+  transition: filter 0.3s;
+  margin-top: 114px; 
+}
+
+.contacts__subtitle {
+  margin-top: 20px; 
+  margin-bottom: 30px; 
+}
+
+.contacts__image:hover {
+  filter: brightness(0.8);
+}
+
+/* --------- Стили для social-media --------- */
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 123px; 
+}
+
+.social__media {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.social__icons {
+  margin: 0 50px; 
+}
+
+.social__icons a {
+  display: flex;
+  align-items: center;
+}
+
+.social__icons:hover {
+  filter: brightness(0.8);
+}
+
+.social__info {
+  text-align: center; 
+  margin-top: 45px;
+}
+
+/* --------- Медиа-запросы --------- */
+
+@media (max-width: 768px) {
+  .mainmenu__list {
+    gap: 5vw; /* относительные единицы измерения vw (viewport width) и vh (viewport height) */
+  }
+
+  .work {
+    flex: 1 1 100%; 
+  }
+
+  .work__img,
+  .work__appraisal
+  .photo__image {
+    max-width: 90%; 
+    height: auto; 
+  }
+
+  .portfolio,
+  .skills {
+    padding: 20px; 
+  }
+
+  .catalog,
+  .program {
+    gap: 5vw; 
+  }
+
+  .photo__title {
+    font-size: 3vw; 
+  }
+
+  .me__skills,
+  .me__portfolio {
+    font-size: 3vw; 
+  }
+
+  .picture__title {
+    font-size: 2vw; 
+  }
+
+  .social__icons {
+    max-width: 40px; 
+  }
+
+  .photo__title {
+    font-size: 5vw; 
+  }
+
+  .photo__subtitle {
+    font-size: 4vw; 
+  }
+
+}
+
+/* --------- Стили для навигации --------- */
+.menu__link,
+.social__icons {
+  transition: background-color 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.menu__link:hover,
+.social__icons:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.menu__link:focus,
+.social__icons:focus {
+  outline: none;
+  border: 2px solid #929292;
+  border-radius: 2px;
+}
+
+
+.message__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.modal__wrapper {
+    padding: 30px;
+    background-color: #fefefe;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.send__message__btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.send__message__btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.send__message__btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.close__btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.close__btn:hover {
+    background-color: #c82333;
+    transform: scale(1.5);
+}
+
+.close__btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+.modal--open {
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 110;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  background-color: #000;
+  opacity: 1;
+  transform: 0.3s ease-in-out;
+}
+
+.burger__line:nth-child(1) {
+  top: 0;
+}
+.burger__line:nth-child(1) {
+  top: 20px;
+}
+.burger__line:nth-child(1) {
+  top: 20px;
+}
+.burger__line:nth-child(1) {
+  top: 40px;
+}
